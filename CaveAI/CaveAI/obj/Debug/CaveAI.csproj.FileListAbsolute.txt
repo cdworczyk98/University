@@ -1,0 +1,9 @@
+C:\Users\Chris\Source\Repos\Coursework\CaveAI\CaveAI\bin\Debug\CaveAI.exe.config
+C:\Users\Chris\Source\Repos\Coursework\CaveAI\CaveAI\bin\Debug\CaveAI.exe
+C:\Users\Chris\Source\Repos\Coursework\CaveAI\CaveAI\bin\Debug\CaveAI.pdb
+C:\Users\Chris\Source\Repos\Coursework\CaveAI\CaveAI\obj\Debug\CaveAI.csprojAssemblyReference.cache
+C:\Users\Chris\Source\Repos\Coursework\CaveAI\CaveAI\obj\Debug\CaveAI.Properties.Resources.resources
+C:\Users\Chris\Source\Repos\Coursework\CaveAI\CaveAI\obj\Debug\CaveAI.csproj.GenerateResource.cache
+C:\Users\Chris\Source\Repos\Coursework\CaveAI\CaveAI\obj\Debug\CaveAI.csproj.CoreCompileInputs.cache
+C:\Users\Chris\Source\Repos\Coursework\CaveAI\CaveAI\obj\Debug\CaveAI.exe
+C:\Users\Chris\Source\Repos\Coursework\CaveAI\CaveAI\obj\Debug\CaveAI.pdb

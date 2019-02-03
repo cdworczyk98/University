@@ -1,0 +1,235 @@
+[
+  {
+    "IsSIR": false,
+    "Header": "S195020134",
+    "Sender": "+44 34564 4563",
+    "Subject": null,
+    "Type": "SMS",
+    "Words": [
+      "Hello",
+      "this",
+      "is",
+      "a",
+      "exmaple",
+      "input",
+      "message.",
+      "LOL <Laughing out loud>",
+      "WTF <What the f***>",
+      "LMAO <Laughing my a** off>"
+    ],
+    "Hashtags": [],
+    "Mentions": [],
+    "URLs": [],
+    "SIReport": {
+      "Sortcode": null,
+      "Incident": null
+    }
+  },
+  {
+    "IsSIR": false,
+    "Header": "E414124375",
+    "Sender": "cdworczytkewfg@gmail.com",
+    "Subject": "First day at uni",
+    "Type": "email",
+    "Words": [
+      "this",
+      "is",
+      "the",
+      "body",
+      "text",
+      "<URL Quarantined>",
+      "hellooooo"
+    ],
+    "Hashtags": [],
+    "Mentions": [],
+    "URLs": [
+      "www.something.com"
+    ],
+    "SIReport": {
+      "Sortcode": null,
+      "Incident": null
+    }
+  },
+  {
+    "IsSIR": true,
+    "Header": "E452251407",
+    "Sender": "fergreg@gmail.com",
+    "Subject": "SIR 12/12/2012",
+    "Type": "email",
+    "Words": [
+      "This",
+      "is",
+      "body",
+      "text",
+      "<URL Quarantined>",
+      "lineeeeeee",
+      "TExt",
+      "tetxt",
+      "etx",
+      "te",
+      "xtetxtte"
+    ],
+    "Hashtags": [],
+    "Mentions": [],
+    "URLs": [
+      "www.tfgdsji.com"
+    ],
+    "SIReport": {
+      "Sortcode": "12-11-33",
+      "Incident": "Theft"
+    }
+  },
+  {
+    "IsSIR": false,
+    "Header": "T568763559",
+    "Sender": "@yettiii",
+    "Subject": null,
+    "Type": "tweet",
+    "Words": [
+      "this",
+      "exmaple",
+      "#uni",
+      "#boring"
+    ],
+    "Hashtags": [
+      "#uni",
+      "#boring"
+    ],
+    "Mentions": [],
+    "URLs": [],
+    "SIReport": {
+      "Sortcode": null,
+      "Incident": null
+    }
+  },
+  {
+    "IsSIR": false,
+    "Header": "S652090250",
+    "Sender": "+33 35467 4563",
+    "Subject": null,
+    "Type": "SMS",
+    "Words": [
+      "Hello",
+      "this",
+      "is",
+      "a",
+      "eTEXXTTTT"
+    ],
+    "Hashtags": [],
+    "Mentions": [],
+    "URLs": [],
+    "SIReport": {
+      "Sortcode": null,
+      "Incident": null
+    }
+  },
+  {
+    "IsSIR": false,
+    "Header": "E674577102",
+    "Sender": "fewwefewf@gmail.com",
+    "Subject": "subjectliun",
+    "Type": "email",
+    "Words": [
+      "Hello",
+      "this",
+      "is",
+      "a",
+      "exmaple",
+      "input",
+      "message.",
+      "LOL",
+      "WTF",
+      "LMAO"
+    ],
+    "Hashtags": [],
+    "Mentions": [],
+    "URLs": [],
+    "SIReport": {
+      "Sortcode": null,
+      "Incident": null
+    }
+  },
+  {
+    "IsSIR": false,
+    "Header": "S938702902",
+    "Sender": "+44 34564 4563",
+    "Subject": null,
+    "Type": "SMS",
+    "Words": [
+      "Hello",
+      "this",
+      "is",
+      "a",
+      "exmaple",
+      "input",
+      "message.",
+      "LOL <Laughing out loud>",
+      "WTF <What the f***>",
+      "LMAO <Laughing my a** off>"
+    ],
+    "Hashtags": [],
+    "Mentions": [],
+    "URLs": [],
+    "SIReport": {
+      "Sortcode": null,
+      "Incident": null
+    }
+  },
+  {
+    "IsSIR": false,
+    "Header": "E976069845",
+    "Sender": "werg@gmail.com",
+    "Subject": "SIR 13/17/2023",
+    "Type": "email",
+    "Words": [
+      "Sort",
+      "Code:",
+      "13-55-33",
+      "Nature",
+      "Of",
+      "Incident:",
+      "Aliens",
+      "This",
+      "is",
+      "body",
+      "text",
+      "<URL Quarantined>",
+      "lineeeeeee"
+    ],
+    "Hashtags": [],
+    "Mentions": [],
+    "URLs": [
+      "www.tfgdsji.com"
+    ],
+    "SIReport": {
+      "Sortcode": null,
+      "Incident": null
+    }
+  },
+  {
+    "IsSIR": false,
+    "Header": "S681263683",
+    "Sender": "+44 34564 4563",
+    "Subject": null,
+    "Type": "SMS",
+    "Words": [
+      "Hello",
+      "this",
+      "is",
+      "a",
+      "exmaple",
+      "input",
+      "message.",
+      "LOL <Laughing out loud>",
+      "WTF <What the f***>",
+      "LMAO <Laughing my a** off>"
+    ],
+    "Hashtags": [],
+    "Mentions": [],
+    "URLs": [],
+    "SIReport": {
+      "Sortcode": null,
+      "Incident": null
+    }
+  }
+]

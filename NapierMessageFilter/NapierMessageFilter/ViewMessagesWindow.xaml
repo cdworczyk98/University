@@ -1,0 +1,28 @@
+﻿<Window 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NapierMessageFilter"
+        xmlns:Properties="clr-namespace:NapierMessageFilter.Properties" x:Class="NapierMessageFilter.ViewMessages"
+        mc:Ignorable="d"
+        Title="Message Filtering Service" Height="370.492" Width="700">
+    <Grid>
+        <Label Content="Message Type" HorizontalAlignment="Left" Margin="11,6,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="90" Height="25"/>
+        <DataGrid x:Name="Datagrid_Msg" HorizontalAlignment="Left" Height="275" Margin="15,54,0,0" VerticalAlignment="Top" Width="231" SelectionChanged="Datagrid_Msg_SelectionChanged"/>
+        <TextBox x:Name="TextBox_FullMsg" HorizontalAlignment="Left" Height="275" Margin="251,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" AcceptsReturn="True"/>
+        <Label Content="Full Message" HorizontalAlignment="Left" Margin="251,28,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="Button_Delete" Content="Delete" HorizontalAlignment="Left" Margin="446,34,0,0" VerticalAlignment="Top" Width="75" Click="Button_Delete_Click"/>
+        <Label x:Name="Lable_Trending" Content="Trending List" HorizontalAlignment="Left" Margin="526,54,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Lable_Mentions" Content="Mentions List" HorizontalAlignment="Left" Margin="526,186,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="ListBox_Mentions" HorizontalAlignment="Left" Height="112" Margin="526,217,0,0" VerticalAlignment="Top" Width="139"/>
+        <ListBox x:Name="ListBox_Trending" HorizontalAlignment="Left" Height="96" Margin="526,85,0,0" VerticalAlignment="Top" Width="139"/>
+        <Label x:Name="Lable_SIR" Content="SIR List" HorizontalAlignment="Left" Margin="526,54,0,0" VerticalAlignment="Top" Width="100"/>
+        <ListBox x:Name="ListBox_SIR" HorizontalAlignment="Left" Height="244" Margin="526,85,0,0" VerticalAlignment="Top" Width="139"/>
+        <RadioButton x:Name="RadioButton_S" Content="SMS" HorizontalAlignment="Left" Margin="16,32,0,0" VerticalAlignment="Top" GroupName="msgType" Checked="RadioButton_SET_Checked"/>
+        <RadioButton x:Name="RadioButton_E" Content="Email" HorizontalAlignment="Left" Margin="64,32,0,0" VerticalAlignment="Top" GroupName="msgType" Checked="RadioButton_SET_Checked"/>
+        <RadioButton x:Name="RadioButton_T" Content="Tweet" HorizontalAlignment="Left" Margin="116,32,0,0" VerticalAlignment="Top" GroupName="msgType" Checked="RadioButton_SET_Checked"/>
+        <Button x:Name="Button_Reload" Content="Reload" HorizontalAlignment="Left" Margin="366,34,0,0" VerticalAlignment="Top" Width="75" Click="Button_Reload_Click"/>
+
+    </Grid>
+</Window>

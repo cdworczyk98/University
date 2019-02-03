@@ -1,0 +1,29 @@
+﻿<Window x:Class="NapierMessageFilter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NapierMessageFilter"
+        mc:Ignorable="d"
+        Title="Message Filtering Service" Height="378.716" Width="518.267">
+    <Grid Background="White">
+        <Label Content="Header" HorizontalAlignment="Left" Margin="74,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="Lable_BodyText1" Content="Body Text:" HorizontalAlignment="Left" Margin="19,84,0,0" VerticalAlignment="Top" FontSize="9" Height="22"/>
+        <Button x:Name="BTN_Process" Content="Process" HorizontalAlignment="Left" Margin="406,308,0,0" VerticalAlignment="Top" Width="89" Click="BTN_Process_Click" Height="30" FontWeight="Bold" FontSize="14" Background="#FFC7FFB7"/>
+        <TextBox x:Name="TextBox_Text" HorizontalAlignment="Left" Height="239" Margin="74,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="421" AcceptsReturn="True">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="TextBox_Header" HorizontalAlignment="Left" Height="26" Margin="74,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" IsEnabled="False"/>
+        <Button x:Name="Button_S" Content="S" HorizontalAlignment="Left" Margin="206,13,0,0" VerticalAlignment="Top" Width="21" Click="Button_GenH"/>
+        <Button x:Name="Button_E" Content="E" HorizontalAlignment="Left" Margin="232,13,0,0" VerticalAlignment="Top" Width="21" Click="Button_GenH"/>
+        <Button x:Name="Button_T" Content="T" HorizontalAlignment="Left" Margin="258,13,0,0" VerticalAlignment="Top" Width="21" Click="Button_GenH"/>
+        <Label Content="type" HorizontalAlignment="Left" Margin="173,10,0,0" VerticalAlignment="Top" Width="Auto"/>
+        <Button x:Name="Button_ViewAllMsg" Content="View All Messages" HorizontalAlignment="Left" Margin="385,19,0,0" VerticalAlignment="Top" Width="110" Click="Button_ViewAllMsg_Click"/>
+        <Button x:Name="Button_LoadMsgFile" Content="Load Messages From File" HorizontalAlignment="Left" VerticalAlignment="Top" Width="149" Click="Button_LoadMsgFile_Click" Margin="346,44,0,0"/>
+        <Label x:Name="Lable_Sender" Content="Sender:" HorizontalAlignment="Left" Margin="29,69,0,0" VerticalAlignment="Top" FontSize="9" Height="22"/>
+        <Label x:Name="Lable_Subject" Content="Subject:" HorizontalAlignment="Left" Margin="28,84,0,0" VerticalAlignment="Top" FontSize="9" Height="22"/>
+        <Label x:Name="Lable_BodyText2" Content="Body Text:" HorizontalAlignment="Left" Margin="20,100,0,0" VerticalAlignment="Top" FontSize="9" Height="22"/>
+    </Grid>
+</Window>
