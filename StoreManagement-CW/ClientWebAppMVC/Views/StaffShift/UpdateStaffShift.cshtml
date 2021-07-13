@@ -1,0 +1,27 @@
+﻿@model StaffShiftModel
+@{
+}
+<h1>Update Shift</h1>
+<form asp-controller="StaffShift" asp-action="UpdateStaffShift" method="post">
+    <div class="form-group">
+        <label asp-for="ShiftID"></label>
+        <input asp-for="ShiftID" class="form-control col-xl-3" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="StaffID"></label>
+        <input asp-for="StaffID" class="form-control col-xl-3" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="OverTimeDate"></label>
+        <input asp-for="OverTimeDate" class="form-control col-xl-3" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="ExtraHours"></label>
+        <input asp-for="ExtraHours" class="form-control col-xl-3" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="OvertimeMultiplier"></label>
+        <input asp-for="OvertimeMultiplier" class="form-control col-xl-3" required />
+    </div>
+    <button class="btn btn-success" type="submit">Update Shift</button>
+</form>

@@ -1,0 +1,11 @@
+﻿@model StaffShiftModel
+@{
+}
+<h1>Delete Staff Shift</h1>
+<form asp-controller="StaffShift" asp-action="DeleteStaffShift" method="post">
+    <div class="form-group">
+        <label asp-for="ShiftID"></label>
+        <input asp-for="ShiftID" class="form-control col-xl-3" required />
+    </div>
+    <button class="btn btn-success" type="submit">Delete Shift</button>
+</form>

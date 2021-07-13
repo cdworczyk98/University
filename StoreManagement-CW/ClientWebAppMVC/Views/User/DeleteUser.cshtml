@@ -1,0 +1,12 @@
+﻿@model UserModel
+@{
+}
+
+<h1>Delete User</h1>
+<form asp-controller="User" asp-action="DeleteUser" method="post">
+    <div class="form-group">
+        <label asp-for="UserId"></label>
+        <input asp-for="UserId" class="form-control col-xl-3" required />
+    </div>
+    <button class="btn btn-success" type="submit">Delete User</button>
+</form>

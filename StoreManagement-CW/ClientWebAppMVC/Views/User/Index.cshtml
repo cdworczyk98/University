@@ -1,0 +1,69 @@
+﻿@model List<UserModel>
+@{
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                UserId
+            </th>
+            <th>
+                FirstName
+            </th>
+            <th>
+                Surname
+            </th>
+            <th>
+                Address
+            </th>
+            <th>
+                PhoneNumber
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Password
+            </th>
+            <th>
+                UserType
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @item.UserId
+            </td>
+            <td>
+                @item.FirstName
+            </td>
+            <td>
+                @item.SecondName
+            </td>
+            <td>
+                @item.Address
+            </td>
+            <td>
+                @item.PhoneNumber
+            </td>
+            <td>
+                @item.Email
+            </td>
+            <td>
+                ************
+            </td>
+            <td>
+                @item.UserType
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-controller="user" asp-action="AddUser" class="btn btn-primary"> New User</a>
+<a asp-controller="user" asp-action="UpdateUser" class="btn btn-primary">Update User</a>
+<a asp-controller="user" asp-action="DeleteUser" class="btn btn-primary">Delete User</a>

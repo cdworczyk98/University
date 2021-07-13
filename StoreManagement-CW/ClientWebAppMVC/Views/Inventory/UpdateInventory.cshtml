@@ -1,0 +1,32 @@
+﻿@model InventoryModel
+@{
+}
+<h1>Update Item</h1>
+<form asp-controller="Inventory" asp-action="UpdateInventory" method="post">
+    <div class="form-group">
+        <label asp-for="InventoryId"></label>
+        <input asp-for="InventoryId" class="form-control col-xl-3" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="InventoryName"></label>
+        <input asp-for="InventoryName" class="form-control col-xl-3" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="InventoryDescription"></label>
+        <input asp-for="InventoryDescription" class="form-control col-xl-3" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="InventoryCount"></label>
+        <input asp-for="InventoryCount" class="form-control col-xl-3" required />
+        <span asp-validation-for="InventoryCount" class="text-danger" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control col-xl-3" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="FreeDelivery"></label>
+        <input asp-for="FreeDelivery" class="form-control col-xl-3" />
+    </div>
+    <button class="btn btn-success" type="submit">Update Item</button>
+</form>

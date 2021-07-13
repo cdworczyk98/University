@@ -1,0 +1,11 @@
+﻿@model InventoryModel
+@{
+}
+<h1>Delete Inventory</h1>
+<form asp-controller="Inventory" asp-action="DeleteInventory" method="post">
+    <div class="form-group">
+        <label asp-for="InventoryId"></label>
+        <input asp-for="InventoryId" class="form-control col-xl-3" required />
+    </div>
+    <button class="btn btn-success" type="submit">Delete Item</button>
+</form>

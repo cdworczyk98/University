@@ -1,0 +1,35 @@
+﻿@model UserModel 
+@{
+}
+<h1>Update User</h1>
+<form asp-controller="User" asp-action="UpdateUser" method="post">
+    <div class="form-group">
+        <label asp-for="UserId"></label>
+        <input asp-for="UserId" class="form-control col-xl-3" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName" class="form-control col-xl-3" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="SecondName"></label>
+        <input asp-for="SecondName" class="form-control col-xl-3" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="Address"></label>
+        <input asp-for="Address" class="form-control col-xl-3" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="PhoneNumber"></label>
+        <input asp-for="PhoneNumber" class="form-control col-xl-3" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control col-xl-3" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="UserType"></label>
+        <input asp-for="UserType" class="form-control col-xl-3" required />
+    </div>
+    <button class="btn btn-success" type="submit">Update User</button>
+</form>

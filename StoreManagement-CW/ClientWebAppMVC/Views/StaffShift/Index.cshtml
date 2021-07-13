@@ -1,0 +1,55 @@
+﻿@model List<StaffShiftModel>
+@{
+
+}
+
+
+<table class="table table-bordered">
+    <thead>
+
+        <tr>
+            <th>
+                shift id
+            </th>
+            <th>
+                staff id
+            </th>
+            <th>
+                Overtime date
+            </th>
+            <th>
+                Extra Hours
+            </th>
+            <th>
+                Overtime Multiplier
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.ShiftID
+                </td>
+                <td>
+                    @item.StaffID
+                </td>
+                <td>
+                    @item.OverTimeDate
+                </td>
+                <td>
+                    @item.ExtraHours
+                </td>
+                <td>
+                    @item.OvertimeMultiplier
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-controller="StaffShift" asp-action="AddStaffShift" class="btn btn-primary"> New Item</a>
+<a asp-controller="StaffShift" asp-action="UpdateStaffShift" class="btn btn-primary">Update Item</a>
+<a asp-controller="StaffShift" asp-action="DeleteStaffShift" class="btn btn-primary">Delete Item</a>
+

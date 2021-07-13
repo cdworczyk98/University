@@ -1,0 +1,61 @@
+﻿@model List<InventoryModel>
+@{
+
+}
+
+
+<table class="table table-bordered">
+    <thead>
+
+        <tr>
+            <th>
+                id
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Count
+            </th>
+            <th>
+                Price
+            </th>
+            <th>
+                FreeDelivery
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.InventoryId
+                </td>
+                <td>
+                    @item.InventoryName
+                </td>
+                <td>
+                    @item.InventoryDescription
+                </td>
+                <td>
+                    @item.InventoryCount
+                </td>
+                <td>
+                    @item.Price
+                </td>
+                <td>
+                    @item.FreeDelivery
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-controller="inventory" asp-action="AddInventory" class="btn btn-primary"> New Item</a>
+<a asp-controller="inventory" asp-action="UpdateInventory" class="btn btn-primary">Update Item</a>
+<a asp-controller="inventory" asp-action="DeleteInventory" class="btn btn-primary">Delete Item</a>
+
