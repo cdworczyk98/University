@@ -1,0 +1,12 @@
+C:\Users\Chris\source\repos\UserTier\DE-StoreDB\bin\Debug\DE-StoreDB.dacpac
+C:\Users\Chris\source\repos\UserTier\DE-StoreDB\bin\Debug\DE_StoreDB.dll
+C:\Users\Chris\source\repos\UserTier\DE-StoreDB\bin\Debug\DE_StoreDB.pdb
+C:\Users\Chris\source\repos\UserTier\DE-StoreDB\obj\Debug\DE_StoreDB.dll
+C:\Users\Chris\source\repos\UserTier\DE-StoreDB\obj\Debug\DE_StoreDB.pdb
+C:\Users\40340711\source\repos\UserTier\DE-StoreDB\bin\Debug\DE-StoreDB.dacpac
+C:\Users\40340711\source\repos\UserTier\DE-StoreDB\bin\Debug\DE_StoreDB.dll
+C:\Users\40340711\source\repos\UserTier\DE-StoreDB\bin\Debug\DE_StoreDB.pdb
+C:\Users\40340711\source\repos\UserTier\DE-StoreDB\obj\Debug\DE-StoreDB.sqlprojAssemblyReference.cache
+C:\Users\40340711\source\repos\UserTier\DE-StoreDB\obj\Debug\DE_StoreDB.dll
+C:\Users\40340711\source\repos\UserTier\DE-StoreDB\obj\Debug\DE_StoreDB.pdb
+C:\Users\Chris\source\repos\UserTier\DE-StoreDB\obj\Debug\DE-StoreDB.sqlprojAssemblyReference.cache

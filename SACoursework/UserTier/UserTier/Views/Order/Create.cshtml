@@ -1,0 +1,91 @@
+﻿@model UserTier.Models.OrderModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+@{ 
+    List<SelectListItem> customerData = new List<SelectListItem>();
+    List<SelectListItem> productData = new List<SelectListItem>();
+
+    foreach (var item in Model.CustomerModel)
+    {
+        customerData.Add(new SelectListItem
+        {
+            Text = item.FirstName + ", ID="+item.CustomerId.ToString(),
+            Value = item.CustomerId.ToString()
+        });
+
+        
+    }
+
+    foreach (var item in Model.ProductModel)
+    {
+        productData.Add(new SelectListItem
+        {
+            Text = item.Name + ", ID="+item.ProductId.ToString(),
+            Value = item.ProductId.ToString()
+        });
+    }
+
+
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Create Orders</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.OrderId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.OrderId, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.OrderId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProductId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.ProductId, productData)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CustomerId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.CustomerId, customerData)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Quantity, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.OrderDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.OrderDate, new { @type = "date", @class = "form-control datepicker", @Value = Model.OrderDate.ToString("yyyy-MM-dd") })
+                @Html.ValidationMessageFor(model => model.OrderDate, "", new { @class = "text-danger" })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+        @Html.ActionLink("Back", "List", null, new { @class = "btn btn-primary btn-large" })
+</div>

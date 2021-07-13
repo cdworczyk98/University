@@ -1,0 +1,145 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			/* by default hide all radio_content div elements except first element */
+			$(".content .radio_content").hide();
+			$(".content .radio_content:first-child").show();
+
+			/* when any radio element is clicked, Get the attribute value of that clicked radio element and show the radio_content div element which matches the attribute value and hide the remaining tab content div elements */
+			$(".radio_wrap").click(function(){
+			  var current_raido = $(this).attr("data-radio");
+			  $(".content .radio_content").hide();
+			  $("."+current_raido).show();
+			})
+		});
+
+
+		$(document).ready(function(){
+			/* by default hide all radio_content div elements except first element */
+			$(".content .radio_contentINPUT").hide();
+			$(".content .radio_contentINPUT:first-child").show();
+
+			/* when any radio element is clicked, Get the attribute value of that clicked radio element and show the radio_content div element which matches the attribute value and hide the remaining tab content div elements */
+			$(".radio_wrapINPUT").click(function(){
+			  var current_raidoINPUT = $(this).attr("data-radio");
+			  $(".content .radio_contentINPUT").hide();
+			  $("."+current_raidoINPUT).show();
+			})
+		});
+
+	</script>
+
+    <title>Home Page</title>
+</head>
+    <body>
+
+    <form action="summary" method="POST" enctype="multipart/form-data">
+
+        <h2>Summarization Options</h2>
+
+        <div class="wrapper">
+            <div class="radio_tabs">
+                <label class="radio_wrap" data-radio="radio_1">
+                    <input type="radio" name="summary" class="input" value="automatic" checked>
+                    <span class="radio_mark">
+                        Automatic
+                    </span>
+                </label>
+                <label class="radio_wrap" data-radio="radio_2">
+                    <input type="radio" name="summary" class="input" value="manual">
+                    <span class="radio_mark">
+                        Manual
+                    </span>
+                </label>
+                <label class="radio_wrap" data-radio="radio_3" >
+                    <input type="radio" name="summary" class="input" value="tag">
+                    <span class="radio_mark">
+                        Tag Optimized
+                    </span>
+                </label>
+            </div>
+
+            <div class="content">
+                <div class="radio_content radio_1">
+                    <p><strong>Automatic Summarisation: 50%</strong></p>
+                </div>
+                <div class="radio_content radio_2">
+                    <input type="range" name="manualRange" id="ageInputId" value="24" min="1" max="100" oninput="ageOutputId.value = ageInputId.value">
+                    <output name="ageOutputName" id="ageOutputId">24</output>%
+                </div>
+                <div class="radio_content radio_3">
+                    <label>Word tags separated by comma:</label>
+                    <input type="text" id="tags" name="tags">
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Text Input Options</h2>
+
+        <div class="wrapper">
+            <div class="radio_tabs">
+            <label class="radio_wrapINPUT" data-radio="radio_1input">
+                <input type="radio" name="inputtype" class="input" value="fromfile" checked>
+                <span class="radio_mark">
+                    From File
+                </span>
+            </label>
+            <label class="radio_wrapINPUT" data-radio="radio_2input">
+                <input type="radio" name="inputtype" class="input" value="textbox" >
+                <span class="radio_mark">
+                    Input Text
+                </span>
+            </label>
+            <label class="radio_wrapINPUT" data-radio="radio_3input">
+                <input type="radio" name="inputtype" class="input" value="exampletext">
+                <span class="radio_mark">
+                    Example Text
+                </span>
+            </label>
+            </div>
+
+            <div class="content">
+                <div class="radio_contentINPUT radio_1input">
+                    Text File Path: <input type="file" name="myfile"><br>
+                </div>
+
+                <div class="radio_contentINPUT radio_2input">
+                    <textarea id="rawtext" name="mytext" rows="4" cols="50" placeholder="input raw text here!"></textarea>
+                </div>
+
+                <div class="radio_contentINPUT radio_3input"></div>
+
+            </div>
+        </div>
+
+
+        <input type="submit" value="Submit">
+        </form>
+
+        <hr>
+
+        <h2>Full Text:</h2>
+        <p>{{fullText}}</p>
+
+        <hr>
+
+        <h2>Summarised Text:</h2>
+        <p>Number Of Sentences: {{sumNumSent}} out of {{numSent}} ({{sumPercent}}%)</p>
+        <p>{{summaText}}</p>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+    </body>
+</html>

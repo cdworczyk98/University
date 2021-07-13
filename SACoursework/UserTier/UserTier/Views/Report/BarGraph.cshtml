@@ -1,0 +1,44 @@
+﻿@model UserTier.Models.BarDataPointModel
+
+@{
+    ViewBag.Title = "BarGraph";
+}
+
+<h2>Bar Braph</h2>
+
+@Html.ActionLink("Back To Menu", "Index", "Home", null, new { @class = "btn btn-primary btn-large" })
+@Html.ActionLink("Bar Graph", "BarGraph", "Report", new { @class = "btn btn-primary btn-large" })
+@Html.ActionLink("Line Graph", "LineGraph", "Report", new { @class = "btn btn-primary btn-large" })
+@Html.ActionLink("Pie Chart", "PieChart", "Report", new { @class = "btn btn-primary btn-large" })
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    exportEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	title: {
+		text: "Number of Products in Each Categrory"
+	},
+	axisY: {
+		title: "No. of Products"
+	},
+	data: [{
+		type: "column",
+		dataPoints: @Html.Raw(ViewBag.DataPoints)
+	}]
+});
+chart.render();
+
+}
+    </script>
+</head>
+<body>
+    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>                              
