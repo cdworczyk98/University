@@ -1,0 +1,58 @@
+﻿@model UserTier.Models.LineDataPointModel
+
+@{
+    ViewBag.Title = "LineGraph";
+}
+
+<h2>Line Graph</h2>
+
+@Html.ActionLink("Back To Menu", "Index", "Home", null, new { @class = "btn btn-primary btn-large" })
+@Html.ActionLink("Bar Graph", "BarGraph", "Report", new { @class = "btn btn-primary btn-large" })
+@Html.ActionLink("Line Graph", "LineGraph", "Report", new { @class = "btn btn-primary btn-large" })
+@Html.ActionLink("Pie Chart", "PieChart", "Report", new { @class = "btn btn-primary btn-large" })
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    exportEnabled: true,
+	title: {
+		text: "Product Trends By Month"
+	},
+	axisY: {
+		includeZero: false
+	},
+	toolTip: {
+		shared: true
+	},
+	data: [{
+		type: "line",
+		name: "Food",
+		showInLegend: true,
+		dataPoints: @Html.Raw(ViewBag.DataPoints1)
+	}, {
+		type: "line",
+		name: "Electronics",
+		showInLegend: true,
+		dataPoints: @Html.Raw(ViewBag.DataPoints2)
+	}, {
+		type: "line",
+		name: "Toys",
+		showInLegend: true,
+		dataPoints: @Html.Raw(ViewBag.DataPoints3)
+	}]
+});
+chart.render();
+
+}
+    </script>
+</head>
+<body>
+    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>                              

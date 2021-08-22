@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BusinessLogicTier.Processors.CustomerProcessor">
+    <Position X="3" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAEAAEACAAAAAAAAAAA=</HashCode>
+      <FileName>Processors\CustomerProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogicTier.Processors.LoginProcessor">
+    <Position X="1.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Processors\LoginProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogicTier.Processors.OrderProcessor">
+    <Position X="4.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAEAAEACAAAAAAAAAAA=</HashCode>
+      <FileName>Processors\OrderProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogicTier.ProductProcessor">
+    <Position X="6.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAABAEAAEACAAAAAAAAAAA=</HashCode>
+      <FileName>Processors\ProductProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogicTier.Processors.ReportProcessor">
+    <Position X="8.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Processors\ReportProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogicTier.Models.CustomerModel">
+    <Position X="3" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAACAAAAAAAAAAAAABAAAQABACAAAAAAAAAAg=</HashCode>
+      <FileName>Models\CustomerModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogicTier.Models.LoginModel">
+    <Position X="1.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\LoginModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogicTier.Models.OrderModel">
+    <Position X="4.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GAACABAAAAAAAAAAAAAAAAAEAAAAQBAAAAAAgAAAAAA=</HashCode>
+      <FileName>Models\OrderModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogicTier.Models.ProductModel">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAQAQAAAAAAAAAAQAgAAAAAAAAAAAAAAACAg=</HashCode>
+      <FileName>Models\ProductModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

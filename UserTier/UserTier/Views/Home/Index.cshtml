@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>@Html.ActionLink("Logout", "LoginUser", "Login", null, new { @class = "btn btn-primary btn-large" })</div>
+
+<h2>DE-Store Menu Homepage</h2>
+<hr />
+<div>@Html.ActionLink("Product Management", "List", "Product", null, new { @class = "btn btn-primary btn-large" })</div>
+<div>@Html.ActionLink("Customer  Management", "List", "Customer", null, new { @class = "btn btn-primary btn-large" })</div>
+<div>@Html.ActionLink("Order Managment", "List", "Order", null, new { @class = "btn btn-primary btn-large" })</div>
+<div><a href="https://www.klarna.com/uk/" target="_blank" class="btn btn-primary btn-large">Financing</a></div>
+<div>@Html.ActionLink("Reports and Analysis", "BarGraph", "Report", null, new { @class = "btn btn-primary btn-large" })</div>
+<div>@Html.ActionLink("Email Box", "LowStock", "Email", null, new { @class = "btn btn-primary btn-large" })</div>
+
+
